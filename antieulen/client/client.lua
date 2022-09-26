@@ -15,7 +15,7 @@ Citizen.CreateThread(function()
 				local state = GetResourceState(resource)
 				
 				if state ~= "started" and state ~= "starting"  then
-					TriggerServerEvent("ban:eulen")
+					TriggerServerEvent("ban:eulen") -- you need to add the server-side part by yourself btw
 					Citizen.Wait(1000)
 				end
 			end
